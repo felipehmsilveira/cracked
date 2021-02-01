@@ -25,7 +25,8 @@
     "react-native-web": "~0.13.12",
     "expo-contacts": "~8.6.0",
     "expo-device": "~2.4.0",
-    "expo-location": "~10.0.0"
+    "expo-location": "~10.0.0",
+    "expo-battery": "~3.1.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0"

@@ -4,6 +4,7 @@ import { Text } from 'react-native-paper'
 import Contacts from './Contacts'
 import SystemInfo from './SystemInfo'
 import Location from './Location'
+import Battery from './Battery'
 
 const Home = ({ navigation }) => {
   return (
@@ -11,6 +12,7 @@ const Home = ({ navigation }) => {
         <Contacts/>
         <SystemInfo/>
         <Location/>
+        <Battery/>
     </Background>
   )
 }
