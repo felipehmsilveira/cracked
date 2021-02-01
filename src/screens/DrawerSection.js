@@ -1,0 +1,28 @@
+import * as React from 'react';
+import { Drawer } from 'react-native-paper';
+
+const DrawerSection = ({ navigation }) => {
+    
+    const state = {
+        active: 'first'
+    }
+
+    const { active } = this.state;
+
+    return (
+        <Drawer.Section title="Some title">
+        <Drawer.Item
+            label="First Item"
+            active={active === 'first'}
+            onPress={() => { this.setState({ active: 'first' }); }}
+        />
+        <Drawer.Item
+            label="Second Item"
+            active={active === 'second'}
+            onPress={() => { this.setState({ active: 'second' }); }}
+        />
+        </Drawer.Section>
+    );
+}
+
+export default DrawerSection

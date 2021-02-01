@@ -26,10 +26,11 @@ const styles = StyleSheet.create({
   },
   input: {
     backgroundColor: theme.colors.surface,
+	borderColor: theme.colors.text,
   },
   description: {
     fontSize: 13,
-    color: theme.colors.secondary,
+    color: theme.colors.text,
     paddingTop: 8,
   },
   error: {

@@ -23,10 +23,13 @@ const LoginScreen = ({ navigation }) => {
       setPassword({ ...password, error: passwordError })
       return
     }
+    navigation.navigate('Home')
+    /*
     navigation.reset({
       index: 0,
       routes: [{ name: 'Dashboard' }],
     })
+    */
   }
 
   return (
@@ -87,7 +90,7 @@ const styles = StyleSheet.create({
   },
   forgot: {
     fontSize: 13,
-    color: theme.colors.secondary,
+    color: theme.colors.text,
   },
   link: {
     fontWeight: 'bold',
