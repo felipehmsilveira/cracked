@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import * as Contacts from 'expo-contacts';
+import { Text } from 'react-native-paper'
 
 export default function App() {
   useEffect(() => {
@@ -13,7 +14,7 @@ export default function App() {
 
         if (data.length > 0) {
           const contact = data;
-          console.log(contact);
+         // console.log(contact);
         }
       }
     })();
@@ -21,7 +22,7 @@ export default function App() {
 
   return (
     <View>
-      <Text>Contacts Module Example</Text>
+      <Text>Contacts Module</Text>
     </View>
   );
 }
